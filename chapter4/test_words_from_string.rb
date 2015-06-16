@@ -13,7 +13,7 @@ class TestWordsFromString < Minitest::Test
   end
 
   def test_many_words
-    assert_equal ['the', 'cat', 'sat', 'on', 'the', 'mat'], words_from_string('the cat sat on the mat')
+    assert_equal %w(the cat sat on the mat), words_from_string('the cat sat on the mat')
   end
 
   def test_ignore_punctuation
